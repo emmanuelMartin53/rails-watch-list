@@ -6,6 +6,7 @@
 #
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
+
 #   end
 
 require "faker"
@@ -24,3 +25,11 @@ puts "Creating lists..."
   )
 end
 puts "Done!"
+
+
+List.create(name: "policier")
+List.create(name: "horror")
+List.create(name: "aventure")
+List.create(name: "Science-fiction")
+List.create(name: "comedy")
+List.create(name: "drame")
